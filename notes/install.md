@@ -6,12 +6,15 @@
 brew install ansible
 ```
 #### Ubuntu
-使用`apt`配置PPA及安装Ansible
+使用`apt`安装Ansible，只尝试过Ubuntu16.04和18.04
 ```
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update
-sudo apt-get install ansible
+apt update
+
+apt install software-properties-common
+
+apt-add-repository --yes --update ppa:ansible/ansible
+
+apt install ansible
 ```
 
 #### CentOS
